@@ -23,12 +23,12 @@ class Person:
         try:
             if age < 0:
                 raise ValueError("Age couldn't be negative")
-            if age > 130:
+            if age > 140:
                 raise ValueError("Age couldn't be so big")
             else:
                 self.__age = age
-        except ValueError as v:
-            print(v)
+        except:
+            print("Please insert correct age")
         try:
             if "@" not in email:
                 raise ValueError("You entered not mail adress")
@@ -55,7 +55,7 @@ class Person:
         try:
             if new_age < 0:
                 raise ValueError("Age couldn't be negative")
-            if new_age > 130:
+            if new_age > 140:
                 raise ValueError("Age couldn't be so big")
             else:
                 self.__age = new_age
@@ -65,5 +65,5 @@ class Person:
 
        
 a = Person("at", "b", 23, "admin@mail.ru")
-a.set_age(1185)
+a.set_age(115)
 print(a.get_age())
